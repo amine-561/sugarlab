@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SugarLab - لوازم الحلويات</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffd6c0;
+        }
+        nav a {
+            margin: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff6f61;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-image: url('https://images.unsplash.com/photo-1603052875143-d7fa865c0f6d?auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px #000;
+        }
+        .hero p {
+            font-size: 1.2em;
+            text-shadow: 1px 1px 3px #000;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+        .product {
+            background-color: #fff5f0;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product h3 {
+            margin: 15px 0 10px 0;
+            color: #ff6f61;
+        }
+        .product p {
+            margin: 0 10px 15px 10px;
+            color: #666;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff6f61;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SugarLab</h1>
+    <p>لوازم الحلويات بأفضل جودة</p>
+</header>
+
+<nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#products">منتجاتنا</a>
+    <a href="#contact">اتصل بنا</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>مرحبا بكم في SugarLab</h2>
+    <p>كل ما تحتاجه لصنع الحلويات في مكان واحد!</p>
+</section>
+
+<section class="products" id="products">
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=600&q=80" alt="أدوات خبز">
+        <h3>أدوات الخبز</h3>
+        <p>أدوات احترافية لجعل تجربة الخبز ممتعة وسهلة.</p>
+    </div>
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1586201375757-9c39f6c2d5f0?auto=format&fit=crop&w=600&q=80" alt="شوكولاتة">
+        <h3>شوكولاتة وحشوات</h3>
+        <p>أفضل أنواع الشوكولاتة والحشوات لمذاق مثالي.</p>
+    </div>
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1604908177527-5c40fa0b3b10?auto=format&fit=crop&w=600&q=80" alt="سكر وزينة">
+        <h3>سكر وزينة</h3>
+        <p>جعل الحلويات الخاصة بك جميلة ولذيذة مع أدوات التزيين.</p>
+    </div>
+</section>
+
+<footer id="contact">
+    <p>اتصل بنا: info@sugarlab.com | جميع الحقوق محفوظة © 2026</p>
+</footer>
+
+</body>
+</html>
